@@ -39,17 +39,20 @@ public class player : MonoBehaviour
             
             transform.position = recinto.position;
             rb.isKinematic=true;
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Recinto = false;
+                transform.position += new Vector3(5f, 0f, 0f);
+            }
+
+
         }
         else
         {
             rb.isKinematic=false;
         }
         
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Recinto = false;
-            transform.position += new Vector3(5f, 0f, 0f);
-        }
+        
     }
 
    

@@ -5,8 +5,7 @@ using UnityEngine;
 public class recintoscript : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField]
-    GameObject player;
+    
     public float speed = 10f;
     private bool Recinto = false;
     void Start()
